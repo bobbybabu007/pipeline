@@ -9,6 +9,7 @@ pipeline {
         }
         stage('Checkout SCM') {
             steps {
+                sh 'triggering a build using web hook'
                 checkout scm
             }
         }
